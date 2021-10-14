@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SensoresInit</string>
+    <string name="label_accelerometer">Accelerometer (m/s^2)</string>
+    <string name="label_gyroscope">Gyroscope (rad/s)</string>
+    <string name="label_rotating_coordinates">Magnetometer (μT)</string>
+    <string name="label_light">Light (lux)</string>
+    <string name="label_temperature">Temperature (°C)</string>
+    <string name="label_humidity">Relative Humidity (%)</string>
+    <string name="label_pressure">Pressure (hPa)</string>
+    <string name="value_accelerometer">x:0.46 y:9.46 Z:-2.53</string>
+    <string name="value_gyroscope">x:-0.46 y:1.32 Z:-2.32</string>
+    <string name="value_rotation">x:-0.48 y:1.34 Z:-2.33</string>
+    <string name="value_light">17894.47</string>
+    <string name="value_temperature">27</string>
+    <string name="value_humidity">13.7</string>
+    <string name="value_pressure">1013.3</string>
+</resources>

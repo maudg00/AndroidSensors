@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labelGyroscope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_gyroscope"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/labelAccelerometer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/labelAccelerometer"
+        app:layout_constraintTop_toTopOf="@+id/labelAccelerometer" />
+
+    <TextView
+        android:id="@+id/labelAccelerometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/label_accelerometer"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/labelGyroscope"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/valueAccelerometer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/value_accelerometer"
+        app:layout_constraintEnd_toEndOf="@+id/labelAccelerometer"
+        app:layout_constraintStart_toStartOf="@+id/labelAccelerometer"
+        app:layout_constraintTop_toBottomOf="@+id/labelAccelerometer" />
+
+    <TextView
+        android:id="@+id/valueGyroscope"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"
+        android:text="@string/value_gyroscope"
+        app:layout_constraintBottom_toBottomOf="@+id/valueAccelerometer"
+        app:layout_constraintEnd_toEndOf="@+id/labelGyroscope"
+        app:layout_constraintStart_toStartOf="@+id/labelGyroscope"
+        app:layout_constraintTop_toTopOf="@+id/valueAccelerometer" />
+
+    <TextView
+        android:id="@+id/labelLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_light"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/labelTemperature"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/valueMagnetometer" />
+
+    <TextView
+        android:id="@+id/valueLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="7dp"
+        android:text="@string/value_light"
+        app:layout_constraintEnd_toEndOf="@+id/labelLight"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/labelLight"
+        app:layout_constraintTop_toBottomOf="@+id/labelLight" />
+
+    <TextView
+        android:id="@+id/labelPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/label_pressure"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/labelHumidity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valueLight" />
+
+    <TextView
+        android:id="@+id/valueHumidity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="79dp"
+        android:text="@string/value_humidity"
+        app:layout_constraintBottom_toBottomOf="@+id/valuePressure"
+        app:layout_constraintEnd_toEndOf="@+id/labelHumidity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/labelHumidity"
+        app:layout_constraintTop_toTopOf="@+id/valuePressure"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/valueTemperature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:text="@string/value_temperature"
+        app:layout_constraintBottom_toBottomOf="@+id/valueLight"
+        app:layout_constraintEnd_toEndOf="@+id/labelTemperature"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/labelTemperature"
+        app:layout_constraintTop_toTopOf="@+id/valueLight"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/valuePressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="17dp"
+        android:text="@string/value_pressure"
+        app:layout_constraintEnd_toEndOf="@+id/labelPressure"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="@+id/labelPressure"
+        app:layout_constraintTop_toBottomOf="@+id/labelPressure" />
+
+    <TextView
+        android:id="@+id/labelHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_humidity"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/labelPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/labelPressure"
+        app:layout_constraintTop_toTopOf="@+id/labelPressure"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/labelTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_temperature"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/labelLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/labelLight"
+        app:layout_constraintTop_toTopOf="@+id/labelLight"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/labelRotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/label_rotating_coordinates"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/valueGyroscope"
+        app:layout_constraintStart_toStartOf="@+id/valueAccelerometer"
+        app:layout_constraintTop_toTopOf="@+id/valueAccelerometer" />
+
+    <TextView
+        android:id="@+id/valueMagnetometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/value_rotation"
+        app:layout_constraintEnd_toEndOf="@+id/labelRotation"
+        app:layout_constraintStart_toStartOf="@+id/labelRotation"
+        app:layout_constraintTop_toBottomOf="@+id/labelRotation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
