@@ -55,13 +55,13 @@
         android:id="@+id/labelLight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:text="@string/label_light"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/labelTemperature"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/valueMagnetometer" />
+        app:layout_constraintTop_toBottomOf="@+id/valueMagnetometer" />
 
     <TextView
         android:id="@+id/valueLight"
@@ -164,7 +164,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/valueGyroscope"
         app:layout_constraintStart_toStartOf="@+id/valueAccelerometer"
-        app:layout_constraintTop_toTopOf="@+id/valueAccelerometer" />
+        app:layout_constraintTop_toBottomOf="@+id/valueAccelerometer" />
 
     <TextView
         android:id="@+id/valueMagnetometer"

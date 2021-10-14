@@ -27,6 +27,11 @@ class MainActivity : AppCompatActivity(), Model.Companion.SensorManagerInterface
         myModel.stopUpdates()
 
     }
+    override fun onResume() {
+        super.onResume()
+        myModel.sm=applicationContext.getSystemService(SENSOR_SERVICE) as SensorManager
+        myModel.startTakingData(this)
+    }
     @SuppressLint("SetTextI18n")
     override fun listenToSensorValues(
         accelerometerX: Float, accelerometerY: Float, accelerometerZ: Float,
