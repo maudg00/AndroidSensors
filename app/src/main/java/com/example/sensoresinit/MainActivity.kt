@@ -1,14 +1,13 @@
 package com.example.sensoresinit
 
+import android.annotation.SuppressLint
 import android.hardware.Sensor
 import android.hardware.SensorManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.Display
 import android.widget.TextView
 import com.example.androidmarcha.Model
-import kotlin.math.log
 
 class MainActivity : AppCompatActivity(), Model.Companion.SensorManagerInterface {
     private var TAG="SensorList"
@@ -25,8 +24,10 @@ class MainActivity : AppCompatActivity(), Model.Companion.SensorManagerInterface
     override fun onPause() {
         // Be sure to unregister the sensor when the activity pauses.
         super.onPause()
-        myModel.sm.unregisterListener(myModel)
+        myModel.stopUpdates()
+
     }
+    @SuppressLint("SetTextI18n")
     override fun listenToSensorValues(
         accelerometerX: Float, accelerometerY: Float, accelerometerZ: Float,
         gyroscopeX: Float, gyroscopeY: Float, gyroscopeZ: Float,

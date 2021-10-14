@@ -121,7 +121,7 @@ class Model: SensorEventListener{
     override fun onAccuracyChanged(p0: Sensor?, p1: Int) {
         print("Change")
     }
-    private fun stopUpdates()
+    fun stopUpdates()
     {
         sm.unregisterListener(this)
     }
